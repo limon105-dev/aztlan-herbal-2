@@ -1,0 +1,137 @@
+/* icon-item-box-section css start */
+.icon-item-box {
+    max-width: 976px;
+    margin: 0 auto;
+    background: var(--item-bg);
+    padding: 48px;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+.icon-item-box .icon-items {
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.icon-item-box .icon-items .icon-item .icon {
+    width: auto;
+    height: auto;
+    background: transparent;
+}
+
+.icon-item-inner-box {
+    margin: 48px 0 0 0;
+    background: var(--white);
+    box-shadow: 0px 4px 6px 0px #0000001A;
+    overflow: hidden;
+    padding: 24px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.icon-item-inner-box-content-wrap {
+    background: var(--item-bg4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 108px 20px;
+    overflow: hidden;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.icon-item-inner-box-content {
+    text-align: center;
+}
+
+.icon-item-inner-box-content .icon {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+
+.icon-item-inner-box-content-title {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.icon-item-inner-box-content-text {
+    line-height: 24px;
+    margin: 10px 0 0 0;
+}
+
+.icon-item-inner-box-content .btn {
+    margin: 16px 0 0 0;
+}
+
+/* icon-item-box-section css end */
+
+@media only screen and (max-width: 767px) {
+
+    /* icon-item-box-section css start */
+    .icon-item-box .icon-items .icon-item .icon svg {
+        width: 48px;
+        height: 48px;
+    }
+
+    /* icon-item-box-section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* icon-item-box-section css start */
+    .icon-item-box {
+        padding: 20px;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        -o-border-radius: 16px;
+    }
+
+    .icon-item-box .icon-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .icon-item-inner-box {
+        margin: 32px 0 0 0;
+        padding: 16px;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        -o-border-radius: 16px;
+    }
+
+    .icon-item-inner-box-content-wrap {
+        padding: 50px 16px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+
+    .icon-item-inner-box-content-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .icon-item-inner-box-content-text {
+        line-height: 22px;
+        font-size: 14px;
+    }
+
+    /* icon-item-box-section css end */
+}

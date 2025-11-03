@@ -1,0 +1,41 @@
+/* sticky-btn-section css start */
+.sticky-btn-section {
+    height: 100px;
+    background-color: var(--brand-color);
+}
+
+.sticky-btn {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+    background-color: var(--white);
+    z-index: 99;
+    box-shadow: 0 0 10px rgb(204 204 204 / 60%);
+}
+
+.sticky-btn .btn {
+    width: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* sticky-btn-section css end */
+
+@media only screen and (max-width:575px) {
+
+    /* sticky-btn-section css start */
+    .sticky-btn-section {
+        height: 88px;
+    }
+
+    /* sticky-btn-section css end */
+
+}

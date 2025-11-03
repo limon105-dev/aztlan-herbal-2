@@ -1,0 +1,118 @@
+/* number-icon-section css start */
+.number-icon-section {
+    background-color: var(--section-bg);
+}
+
+.number-icon-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.number-icon-item .icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--brand-color);
+    color: var(--white);
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    margin: 0 auto;
+}
+
+.number-icon-item-content {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.number-icon-item-title {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.number-icon-item-text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 14px 0 0 0;
+}
+
+/* number-icon-section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* number-icon-section css start */
+    .number-icon-items {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+    .number-icon-item {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .number-icon-item .icon {
+        margin: 0;
+    }
+
+    .number-icon-item-content {
+        text-align: left;
+        margin: 0;
+        width: calc(100% - 96px);
+    }
+
+    /* number-icon-section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* number-icon-section css start */
+    .number-icon-item-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .number-icon-item-text {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 10px 0 0 0;
+    }
+
+    /* number-icon-section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* number-icon-section css start */
+    .number-icon-item .icon {
+        width: 56px;
+        height: 56px;
+        font-size: 20px;
+    }
+
+    .number-icon-item-content {
+        width: calc(100% - 76px);
+    }
+
+    .number-icon-item-title {
+        font-size: 16px;
+    }
+
+    .number-icon-item-text {
+        margin: 7px 0 0 0;
+    }
+
+    /* number-icon-section css end */
+}

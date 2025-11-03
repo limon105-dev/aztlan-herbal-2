@@ -1,0 +1,142 @@
+/* product-details-section css start */
+.product-details-section {
+    background: linear-gradient(135deg, rgba(156, 175, 136, 0.05) 0%, rgba(245, 241, 232, 0.3) 70.71%);
+}
+
+.product-details-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.product-details-img {
+    overflow: hidden;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    box-shadow: 0px 20px 25px 0px #0000001A;
+}
+
+.product-details-item {
+    margin: 0 0 32px 0;
+    display: flex;
+    gap: 16px;
+}
+
+.product-details-item:last-child {
+    margin: 0;
+}
+
+.product-details-item-title {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 10px 0;
+}
+
+.product-details-item-text {
+    line-height: 26px;
+}
+
+/* product-details-section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* product-details-section css start */
+    .product-details-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-details-price-card {
+        padding: 24px 24px 40px 24px;
+    }
+
+    /* product-details-section css end */
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* product-details-section css start */
+    .product-details-wrapper {
+        gap: 36px;
+    }
+
+    .product-details-price-card {
+        margin: 24px 0 0 0;
+    }
+
+    .product-details-item-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .product-details-item-text {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 8px 0 0 0;
+    }
+
+    /* product-details-section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* product-details-section css start */
+    .product-details-item {
+        margin: 0 0 24px 0;
+        gap: 12px;
+    }
+
+    .product-details-price .previous-price {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .product-details-price .latest-price {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .product-details-badge {
+        font-size: 12px;
+        padding: 6px 16px;
+    }
+
+    .product-details-list li {
+        margin: 12px 0 0 0;
+        padding: 0 0 0 18px;
+    }
+
+    .product-details-list li p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .product-details-list li::after {
+        top: 4px;
+        width: 12px;
+        height: 14px;
+    }
+
+    .product-details-item-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .product-details-item-title {
+        font-size: 16px;
+    }
+
+    .product-details-item-text {
+        margin: 6px 0 0 0;
+    }
+
+
+    /* product-details-section css end */
+}
