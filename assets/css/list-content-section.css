@@ -1,0 +1,199 @@
+/* list-content-section css start */
+.list-content-wrap {
+    max-width: 976px;
+    margin: 0 auto;
+}
+
+.list-content-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.list-content-item {
+    background: var(--item-bg);
+    padding: 32px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    position: relative;
+}
+
+.list-content-item:last-child {
+    background: rgba(193, 119, 103, 0.102);
+    border: 2px solid rgba(193, 119, 103, 0.2)
+}
+
+.list-content-item-heading {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.list-content-item-heading .icon {
+    display: flex;
+}
+
+.list-content-item-title {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.list-content-item-list {
+    margin: 24px 0 0 0;
+}
+
+.list-content-item-list li {
+    padding: 0 0 16px 24px;
+    position: relative;
+}
+
+.list-content-item-list li::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 0;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-image: url("../images/dot.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list-content-item-list li:last-child {
+    padding: 0 0 0 24px;
+}
+
+.list-content-item:last-child .list-content-item-list li::before {
+    background-image: url("../images/cross.svg");
+}
+
+.list-btm-content {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0 0 0;
+    background: linear-gradient(90deg, rgba(156, 175, 136, 0.1) 0%, rgba(245, 241, 232, 0.5) 100%);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.list-btm-content-inner {
+    text-align: center;
+}
+
+.list-btm-content-inner .icon {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 16px 0;
+}
+
+.list-btm-content-title {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.list-btm-content-text {
+    line-height: 24px;
+    margin: 16px 0 0 0;
+}
+
+.list-btm-content-inner .btn {
+    margin: 20px 0 0 0;
+}
+
+/* list-content-section css end */
+
+@media only screen and (max-width: 767px) {
+
+    /* list-content-section css start */
+    .list-content-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* list-content-section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* list-content-section css start */
+    .list-content-items {
+        gap: 20px;
+    }
+
+    .list-content-item {
+        padding: 20px;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+    }
+
+    .list-content-item-heading {
+        gap: 12px;
+    }
+
+    .list-content-item-heading .icon svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .list-content-item-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .list-content-item-list {
+        margin: 20px 0 0 0;
+    }
+
+    .list-content-item-list li {
+        padding: 0 0 12px 16px;
+    }
+
+    .list-content-item-list li::before {
+        top: 6px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .list-content-item-list li p {
+        font-size: 14px;
+    }
+
+    .list-btm-content {
+        margin: 20px 0 0 0;
+        padding: 20px;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+    }
+
+    .list-btm-content-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .list-btm-content-text {
+        line-height: 22px;
+        margin: 10px 0 0 0;
+        font-size: 14px;
+    }
+
+    /* list-content-section css end */
+}

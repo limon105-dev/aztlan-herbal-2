@@ -1,7 +1,7 @@
 /* sticky-btn-section css start */
 .sticky-btn-section {
     height: 100px;
-    background-color: var(--brand-color);
+    background-color: var(--item-bg5);
 }
 
 .sticky-btn {
