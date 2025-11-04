@@ -18,7 +18,6 @@
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
-    position: relative;
 }
 
 .list-content-item:last-child {

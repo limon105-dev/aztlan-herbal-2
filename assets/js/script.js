@@ -25,30 +25,7 @@ $(document).ready(function () {
 		$(".nav-link-wrapper-inner").toggleClass("active");
 		$("body").toggleClass("active");
 	});
-
-	// mobile-dropdown responsive accordion js start--
-	$(function () {
-		let isMobile = window.matchMedia("only screen and (max-width: 992px)").matches;
-
-		if (isMobile) {
-			// **..mobile-dropdown-accordion js start..**
-			$('.dropdown-btn').on('click', function () {
-				$(this).next(".sub-menu").slideToggle();
-				$(this).toggleClass('active');
-			});
-			// **..mobile-dropdown-accordion js end..**
-		}
-	});
-	// mobile-dropdown responsive accordion js end--
 	// navbar js end ---
-
-	// **..faq-accordion js start..**
-	$('.faq-accordion-toggle-btn').on('click', function () {
-		$(this).next().slideToggle();
-		$(this).parent().toggleClass('active');
-		$(this).parent().siblings().removeClass('active').find('.faq-accordion-item-content').slideUp();
-	});
-	// **..faq-accordion js end..**
 })
 
 // btn js ---
